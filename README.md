@@ -5,7 +5,11 @@
 
 ## Introduction
 
-This project bridges the SLF4j API revealed in [rocketmq-logging](https://github.com/aliyun-mq/rocketmq-logging) to standard [SLF4j API](https://github.com/qos-ch/slf4j).
+This project bridges the SLF4j API revealed in [rocketmq-logging](https://github.com/aliyun-mq/rocketmq-logging) to
+standard [SLF4j API](https://github.com/qos-ch/slf4j).
+
+Basically, the project hijacks the implementation of standard SLF4j and delegates it to implement
+the [SLF4j API of Apache RocketMQ](https://github.com/aliyun-mq/rocketmq-logging/tree/master/rocketmq-slf4j-api).
 
 ## Requirements
 
