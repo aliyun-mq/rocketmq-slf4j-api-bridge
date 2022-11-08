@@ -11,6 +11,30 @@ This project bridges the SLF4j API revealed in [rocketmq-logging](https://github
 
 - Java 1.8 or later
 
+## Getting Started
+
+Add the following dependency to your project. Remember to:
+
+* Replace `ROCKETMQ-LOGGING-VERSION` with
+  the [latest release](https://search.maven.org/search?q=g:io.github.aliyun-mq%20AND%20a:rocketmq-logging).
+* Replace `ROCKETMQ-SLF4J-API-BRIDGE-VERSION` with
+  the [latest release](https://search.maven.org/search?q=g:io.github.aliyun-mq%20AND%20a:rocketmq-slf4j-api-bridge).
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>io.github.aliyun-mq</groupId>
+        <artifactId>rocketmq-slf4j-api</artifactId>
+        <version>ROCKETMQ-LOGGING-VERSION</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.aliyun-mq</groupId>
+        <artifactId>rocketmq-slf4j-api-bridge</artifactId>
+        <version>ROCKETMQ-SLF4J-API-BRIDGE-VERSION</version>
+    </dependency>
+</dependencies>
+```
+
 ## Manual Release
 
 Set the password in your `settings.xml` for repositories: `sonatype-nexus-snapshots-aliyun-mq`
@@ -22,6 +46,10 @@ mvn clean install -Prelease
 
 Sign in [nexus repository manager](https://s01.oss.sonatype.org/#stagingRepositories) and check the artifact, and
 determine to release/drop it.
+
+## Related Projects
+
+* [rocketmq-logging](https://github.com/aliyun-mq/rocketmq-logging): Logging for Apache RocketMQ.
 
 ## License
 
