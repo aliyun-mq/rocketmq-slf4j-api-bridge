@@ -1,4 +1,4 @@
-# Bridge for SLF4j API of Apache RocketMQ
+# Bridge for SLF4J API of Apache RocketMQ
 
 [![License][license-image]][license-url]
 [![build][build-image]][build-url]
@@ -7,10 +7,10 @@
 ## Introduction
 
 This project bridges the SLF4j API revealed in [rocketmq-logging](https://github.com/aliyun-mq/rocketmq-logging) to
-standard [SLF4j API](https://github.com/qos-ch/slf4j).
+standard [SLF4J API](https://github.com/qos-ch/slf4j).
 
-Basically, the project hijacks the implementation of standard SLF4j and delegates it to implement
-the [SLF4j API of Apache RocketMQ](https://github.com/aliyun-mq/rocketmq-logging/tree/master/rocketmq-slf4j-api).
+Basically, the project hijacks the implementation of standard SLF4J and delegates it to implement
+the [SLF4J API of Apache RocketMQ](https://github.com/aliyun-mq/rocketmq-logging/tree/master/rocketmq-slf4j-api).
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Set the password in your `settings.xml` for repositories: `sonatype-nexus-snapsh
 and `sonatype-nexus-staging-aliyun-mq`, then execute the command below:
 
 ```bash
-mvn clean install -Prelease
+mvn clean deploy -Prelease
 ```
 
 Sign in [nexus repository manager](https://s01.oss.sonatype.org/#stagingRepositories) and check the artifact, then determine whether to release it.
